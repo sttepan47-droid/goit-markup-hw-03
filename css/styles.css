@@ -22,6 +22,17 @@ body {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-header {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .nav-li {
@@ -69,10 +80,16 @@ body {
 .hero {
     background-color: #2e2f42;
     display: flex;
-    height: 600px;
     justify-content: center;
     align-items: center;
+    flex-direction: center;
+}
+
+.container-hero {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 160px 80px;
 }
 
 .hero-title {
@@ -99,7 +116,7 @@ body {
     border-radius: 4px;
     padding: 16px 32px;
     gap: 10px;
-
+    border: none;
 }
 
 .button:hover {
@@ -111,14 +128,13 @@ body {
 }
 
 .about-section {
-    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.22;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.03em;
     color: #2e2f42;
-    background-color: #f4f4fd;
+    padding: 120px 0;
 }
 
 .about-li {
@@ -127,7 +143,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-align: center;
+    text-align: left;
 }
 
 .about-p {
@@ -135,7 +151,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
+    text-align: left;
 }
 
 .team-title {
@@ -194,7 +210,7 @@ body {
 .portfolio-list {
     list-style: none;
     display: flex;
-    gap: 8px;
+    gap: 48px 24px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -205,7 +221,6 @@ body {
 .container {
     max-width: 1158px;
     padding: 0 15px;
-    width: 1158px;
     margin: 0 auto;
     justify-content: center;
 
@@ -283,6 +298,7 @@ img {
 }
 
 .team-section {
-    background-color: #f5f5f5;
+    background-color: #f4f4fd;
     padding: 120px 0;
+    margin-bottom: 72px;
 }
