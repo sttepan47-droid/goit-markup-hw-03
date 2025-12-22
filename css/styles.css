@@ -26,15 +26,6 @@ body {
     flex-direction: row;
 }
 
-.container-header {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
 .nav-li {
     font-weight: 500;
     font-size: 16px;
@@ -83,13 +74,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: center;
-}
-
-.container-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 160px 80px;
 }
 
 .hero-title {
@@ -223,14 +207,16 @@ body {
     padding: 0 15px;
     margin: 0 auto;
     justify-content: center;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 160px 80px;
 }
 
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 76px;
 }
 
 .portfolio-item {
@@ -264,7 +250,7 @@ img {
     padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
+    clip-path: inset(100%);
     overflow: hidden;
     white-space: nowrap;
 }
